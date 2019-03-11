@@ -61,13 +61,9 @@ You can publish example seeder:
 php artisan vendor:publish --provider="Dasperg\Role\RoleServiceProvider" --tag="seeds"
 ```
 
-Don't forget to register this seeder in `database/seeds/DatabaseSeeder.php`:
-```php
-public function run()
-{
-    // ...
-    $this->call(RolesTableSeeder::class);
-}
+Don't forget to dump autoloader:
+```bash
+composer dump-autoload
 ```
 
 Now you can seed data:
