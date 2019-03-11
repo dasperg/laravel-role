@@ -9,11 +9,19 @@
             "email": "dasperg@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {},
-    "autoload-dev": {
+    "autoload": {
         "psr-4": {
             "Dasperg\\Role\\": "src/"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dasperg\\Role\\RoleServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
