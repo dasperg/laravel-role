@@ -1,10 +1,10 @@
-#Laravel simple role handling & middleware
+# Laravel simple role handling & middleware
 
 * [Installation](#installation) 
 * [Usage](#usage)
 * [Seeding (optional)](#seeding-(optional)) 
 
-##Installation:
+## Installation:
 This package can be used in Laravel 5.7 or higher.
 
 You can install the package via composer:
@@ -39,7 +39,7 @@ protected $routeMiddleware = [
 ```
 
 
-##Usage
+## Usage
 Controller:
 ```php
 class HomeController extends Controller
@@ -55,7 +55,7 @@ Route:
 Route::get('/', 'HomeController@index')->middleware('role:admin');
 ```
 
-##Seeding (optional)
+## Seeding (optional)
 You can publish example seeder:
 ```bash
 php artisan vendor:publish --provider="Dasperg\Role\RoleServiceProvider" --tag="seeds"
