@@ -4,34 +4,40 @@ namespace Dasperg\Role;
 
 trait RoleTrait
 {
+    /**
+     * @return mixed
+     */
     public function roles()
     {
         return $this->belongsToMany(Role::class);
     }
 
     /**
-     * @param string|array $roles
+     * @param array|string $roles
+     * @return boolean
      */
     public function authorizeRoles($roles)
     {
         if (is_array($roles)) {
             return $this->hasAnyRole($roles) ||
-                abort(401, 'This action is unauthorized.');
+                abort(401);
         }
         return $this->hasRole($roles) ||
-            abort(401, 'This action is unauthorized.');
+            abort(401);
     }
+
     /**
-     * Check multiple roles
      * @param array $roles
+     * @return boolean
      */
     public function hasAnyRole($roles)
     {
         return null !== $this->roles()->whereIn('name', $roles)->first();
     }
+
     /**
-     * Check one role
      * @param string $role
+     * @return boolean
      */
     public function hasRole($role)
     {

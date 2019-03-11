@@ -1,6 +1,6 @@
 {
     "name": "dasperg/laravel-role",
-    "description": "Laravel 5.4 (and 5.5) native User Authentication + Role Authorization",
+    "description": "Laravel 5.7 native User Authentication + Role Authorization",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -9,7 +9,9 @@
             "email": "dasperg@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "laravel/framework": '^5.7.0'
+    },
     "autoload": {
         "psr-4": {
             "Dasperg\\Role\\": "src/"
