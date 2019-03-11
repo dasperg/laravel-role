@@ -1,6 +1,12 @@
 {
     "name": "dasperg/laravel-role",
     "description": "Laravel 5.7 native User Authentication + Role Authorization",
+    "keywords": [
+        "dasper",
+        "laravel",
+        "role"
+    ],
+    "homepage": "https://github.com/dasperg/laravel-role",
     "type": "library",
     "license": "MIT",
     "authors": [

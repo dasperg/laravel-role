@@ -23,6 +23,10 @@ class RoleServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadMigrationsFrom(__DIR__.'/../database');
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
+        $this->publishes([
+            __DIR__.'/../database/seeds/RolesTableSeeder.php' => database_path('seeds'),
+        ], 'seeds');
     }
 }
