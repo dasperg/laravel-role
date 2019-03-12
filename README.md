@@ -2,7 +2,7 @@
 
 * [Installation](#installation) 
 * [Usage](#usage)
-* [Seeding (optional)](#seeding-(optional)) 
+* [Seeding (optional)](#seeding-optional) 
 
 ## Installation:
 This package can be used in Laravel 5.7 or higher.
