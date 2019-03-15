@@ -1,5 +1,7 @@
 <?php
 
+namespace Dasperg\Role;
+
 use Closure;
 use App\Http\Middleware\Authenticate;
 
