@@ -23,6 +23,11 @@
             "Dasperg\\Role\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Dasperg\\Role\\Tests": "tests/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
