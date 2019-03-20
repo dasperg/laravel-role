@@ -2,7 +2,9 @@
 
 namespace Dasperg\Role\Tests;
 
-class ExampleTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class ExampleTest extends TestCase
 {
     /**
      * A basic test example.
